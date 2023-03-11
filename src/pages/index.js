@@ -20,7 +20,7 @@ async function* gen1() {
 }
 //
 
-// Does not work. Runs finally block after each iteration and also runs that same block twice at the end
+// Does not work. Runs finally block after each iteration and also runs that same block once more at the end
 async function* gen2() {
   let i = 0;
   try {
